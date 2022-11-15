@@ -105,7 +105,8 @@ class LongTasks extends Audit {
     const headings = [
       /* eslint-disable max-len */
       {key: 'url', itemType: 'url', text: str_(i18n.UIStrings.columnURL)},
-      {key: 'startTime', itemType: 'ms', granularity: 1, text: str_(i18n.UIStrings.columnStartTime)},
+      {key: 'startTime', itemType: 'ms', granularity: 1, text: str_(i18n.UIStrings.columnStartTime),
+        dontAggregate: true},
       {key: 'duration', itemType: 'ms', granularity: 1, text: str_(i18n.UIStrings.columnDuration)},
       /* eslint-enable max-len */
     ];
