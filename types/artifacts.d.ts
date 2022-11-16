@@ -19,6 +19,7 @@ import {IcuMessage} from './lhr/i18n';
 import LHResult from './lhr/lhr'
 import Protocol from './protocol';
 import Util from './util.js';
+import Audit from './audit.js';
 
 export interface Artifacts extends BaseArtifacts, GathererArtifacts {}
 
@@ -635,7 +636,7 @@ declare module Artifacts {
   interface MetricComputationDataInput {
     devtoolsLog: DevtoolsLog;
     trace: Trace;
-    settings: Util.Immutable<Config.Settings>;
+    settings: Audit.Context['settings'];
     gatherContext: Artifacts['GatherContext'];
     simulator?: InstanceType<typeof Simulator>;
     URL: Artifacts['URL'];
