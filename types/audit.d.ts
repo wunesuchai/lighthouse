@@ -11,7 +11,7 @@ import Config from './config';
 import Gatherer from './gatherer';
 import {IcuMessage} from './lhr/i18n';
 import * as AuditResult from './lhr/audit-result';
-import Util from './util.js';
+import Util from './utility-types.js';
 
 declare module Audit {
   export import Details = AuditDetails;

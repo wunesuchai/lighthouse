@@ -18,7 +18,7 @@ import Gatherer from './gatherer';
 import {IcuMessage} from './lhr/i18n';
 import LHResult from './lhr/lhr'
 import Protocol from './protocol';
-import Util from './util.js';
+import Util from './utility-types.js';
 import Audit from './audit.js';
 
 export interface Artifacts extends BaseArtifacts, GathererArtifacts {}

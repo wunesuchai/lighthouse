@@ -22,7 +22,7 @@ import * as Settings from './lhr/settings';
 import Treemap_ from './lhr/treemap';
 import UserFlow_ from './user-flow';
 import Puppeteer_ from './puppeteer';
-import Util_ from './util.js';
+import Util_ from './utility-types.js';
 
 // Construct hierarchy of global types under the LH namespace.
 declare global {
