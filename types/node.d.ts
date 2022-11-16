@@ -14,6 +14,8 @@ declare global {
     var getCanonicalLocales: (locales?: string | Array<string>) => Array<string>;
   }
 
+  // Some functions defined in node are stringified and run in the browser.
+  // Ensure those functions are working with the correct browser environment.
   interface Window {
     // Cached native functions/objects for use in case the page overwrites them.
     // See: `executionContext.cacheNativesOnNewDocument`.
